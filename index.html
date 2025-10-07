@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="top-bar">
+        <div class="logo">🎵</div>
+        <div class="top-right">
+            <div class="search-icon">🔍</div>
+            <div class="profile-icon">👤</div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <nav>
+            <div class="nav-item active">🏠</div>
+            <div class="nav-item">📚</div>
+            <div class="nav-item">🎵</div>
+            <div class="nav-item">🔍</div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <h2>Now Playing</h2>
+        <div class="album-art">
+            <img src="https://placehold.co/400" alt="Album Art">
+        </div>
+        <div class="song-info">
+            <h3>Song Title</h3>
+            <p>Artist Name</p>
+        </div>
+        <div class="song-list">
+            <div class="song-item">Song 1</div>
+            <div class="song-item">Song 2</div>
+            <div class="song-item">Song 3</div>
+        </div>
+    </main>
+
+    <!-- Player Bar -->
+    <footer class="player-bar">
+        <div class="current-song">
+            <img src="https://placehold.co/50" alt="Now Playing">
+            <div class="song-details">
+                <h4>Song Title</h4>
+                <p>Artist</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="control-btn">⏮️</button>
+            <button class="control-btn play-btn">▶️</button>
+            <button class="control-btn">⏭️</button>
+        </div>
+        <div class="progress-section">
+            <span class="time">0:00</span>
+            <input type="range" class="progress-bar" min="0" max="100" value="0">
+            <span class="time">0:00</span>
+        </div>
+        <div class="volume-controls">
+            <span>🔊</span>
+            <input type="range" class="volume-bar" min="0" max="100" value="80">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
